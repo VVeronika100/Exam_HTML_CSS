@@ -6,17 +6,19 @@
     gap: 10px;
 }
 
-.promo__content {
+.promo__card {
     max-width: 665px;
     width: 100%;
-    display: inline-block;
-}
-
-.promo__card {
     border-radius: 30px;
     background-repeat: no-repeat;
-
 }
+
+.promo__card a {
+    display: block;
+    width: 100%;
+}
+
+
 
 .promo__card h2 {
     font-weight: normal;
@@ -51,4 +53,3 @@ color: white;
 margin-left: 55px;
 }
 
-////////

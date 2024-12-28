@@ -1,0 +1,52 @@
+.promo__container {
+    padding-top: 140px;
+    padding-bottom: 140px;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.promo__content {
+    max-width: 665px;
+    width: 100%;
+    display: inline-block;
+}
+
+.promo__card {
+    border-radius: 30px;
+    background-repeat: no-repeat;
+
+}
+
+.promo__card h2 {
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 52px;
+    letter-spacing: 0.36px;
+}
+
+.promo__card--right {
+    background-image: url(../img/promo_right.png);
+}
+
+.promo__card--left {
+    background-image: url(../img/promo_left.png);  
+}
+
+.promo__card--left h2,
+.promo__card--left h3  {
+color: white;
+}
+
+.promo__card h3 {
+    padding-top: 105px;
+}
+
+.promo__card h2 {
+    padding-bottom: 105px;
+}
+
+.promo__card h2,
+.promo__card h3  {
+margin-left: 55px;
+}

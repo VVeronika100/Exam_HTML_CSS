@@ -18,8 +18,6 @@
     width: 100%;
 }
 
-
-
 .promo__card h2 {
     font-weight: normal;
     font-size: 40px;
@@ -37,7 +35,7 @@
 
 .promo__card--left h2,
 .promo__card--left h3  {
-color: white;
+    color: white;
 }
 
 .promo__card h3 {
@@ -50,6 +48,6 @@ color: white;
 
 .promo__card h2,
 .promo__card h3  {
-margin-left: 55px;
+    margin-left: 55px;
 }
 

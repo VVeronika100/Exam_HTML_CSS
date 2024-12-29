@@ -25,6 +25,13 @@ text-align: center;
 
 }
 
+.products__card:hover {
+    box-shadow: 1px 6px 5px rgba(192, 191, 191, 0.774), 
+                -1px 6px 5px rgba(192, 191, 191, 0.774);
+    cursor: pointer;
+
+}
+
 .products__card-content {
  padding: 30px 30px 20.45px 30px;
 }

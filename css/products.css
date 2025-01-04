@@ -92,11 +92,14 @@ text-align: center;
     color: #274C5B;
 }
 
-.products__rating {
+.rating {
     display: flex;
-    width: 78.67px;
     justify-content: space-between;
     align-items: center;
+}
+
+.products__rating {
+    width: 78.67px;
 }
 
 .products__rating-star {

@@ -1,0 +1,27 @@
+.other-products {
+    background-color: #274C5B;
+}
+
+.other-products__container {
+    padding-top: 140px;
+    padding-bottom: 140px;
+}
+
+.other-products__header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.other-products h2 {
+    color: #fff;
+}
+
+.other-products__button {
+    height: 82px;
+    margin-top: 44.22px;
+}
+
+.other-products .products__cards {
+    margin-top: 44.78px;
+}

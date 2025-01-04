@@ -1,0 +1,36 @@
+.process {
+    background-image: url(../img/process_bg.png);
+    background-repeat: no-repeat;
+    background-size: 720px 704px; 
+}
+
+.process__container {
+    max-width: 780px;
+    padding-top: 40.67px;
+    padding-bottom: 40.45px;
+    margin-left: auto;
+
+}
+
+.process__main {
+    width: 100%;
+    background-color: #fff;
+    border-radius: 30px;
+}
+
+.process__content {
+    padding: 39px 100px 55.11px 60px;
+}
+
+.process__content h2 {
+    margin-bottom: 15.89px;
+}
+
+.process__content h4 {
+font-size: 23px;
+letter-spacing: 0.36px;
+line-height: 32.2px;
+color: #274C5B;
+margin-top: 14.11px;
+margin-bottom: 4px;
+}

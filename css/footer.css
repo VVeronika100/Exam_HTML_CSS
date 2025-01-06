@@ -5,6 +5,9 @@ margin:  0 auto;
 
 .footer__container {
     margin-top: 31px; 
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 10px;
 
 }
 
@@ -162,11 +165,11 @@ margin:  0 auto;
     justify-content: center;
     max-width: 1440px;
 }
-
+/*
 @media (min-width: 1440) {
     .footer__map {
     max-width: 1440px;
     }
 }
-    
+    */
 

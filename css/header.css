@@ -72,7 +72,6 @@ a {
     padding: 0 10px;
 }
 
-
 .header__container {
     display: flex;
     justify-content: space-between;
@@ -103,6 +102,20 @@ a {
     width: 100%;
 }
 
+.nav {
+    position: relative;
+}
+
+.burger-menu,
+input[type = checkbox] {
+    height: 30px;
+    width: 21px;
+    position: absolute;
+    top: 25.5px;
+    right: 20px;
+    visibility: hidden;
+}
+
 .nav__items {
     display: flex;
     justify-content: space-between;
@@ -122,6 +135,141 @@ a {
 
 .nav__item:last-child {
     margin-left: 20px;
+}
+
+@media (max-width: 1024px) {
+    
+    .header__button, .nav {
+        height: 72px;
+    }
+    
+    .burger-menu {
+        z-index: 0;
+    }
+
+    .burger-menu,
+    input[type = checkbox] {
+        height: 21px;
+        width: 30px;
+        position: absolute;
+        top: 25.5px;
+        right: 20px;
+        visibility: visible;
+    }
+
+    .burger-menu span {
+        width: 100%;
+        height: 3px;
+        background-color: #274C5B;
+        position: absolute;
+        
+    }
+
+    .burger-menu span:nth-child(1) {
+        top: 0;
+    }
+
+    .burger-menu span:nth-child(2) {
+        top: 9px;
+    }
+
+    .burger-menu span:nth-child(3) {
+        top: 18px;
+    }
+
+    .nav__item:last-child {
+        margin-left: 0;
+    }
+
+    input[type = checkbox] {
+        opacity: 0;
+        z-index: 3;
+    }
+
+    input[type = checkbox]:checked ~ .burger-menu {
+        z-index: 2;
+    }
+
+    .burger-menu span {
+        transition: background-color 1s linear;
+    }
+
+    input[type = checkbox]:checked ~ .burger-menu span:nth-child(1) {
+        transform: rotate(-45deg);
+        top: 9px;
+    }
+
+    input[type = checkbox]:checked ~ .burger-menu span:nth-child(2) {
+        transform: rotate(45deg);
+        top: 9px;
+    }
+
+    input[type = checkbox]:checked ~ .burger-menu span:nth-child(3) {
+        visibility: hidden;
+    }
+
+    input[type = checkbox]:checked ~ .burger-menu span {
+        background-color: #fff;
+    }
+
+    input[type = checkbox]:checked ~ ul {
+        visibility: visible;
+        right: 0;
+        top: 0;
+    }
+
+    .nav__items {
+        display: flex;
+        justify-content: start;
+        flex-direction: column;
+        background-color: #274C5B;
+        width: 200px;
+        position: absolute;
+        right: 0;
+        top: -280px;
+        visibility: hidden;
+        z-index: 1;
+        transition: top 1s, visibility 5s linear;
+        border-radius: 35px;
+        padding: 15px;
+
+    }
+
+    .nav__item a {
+        font-size: 20px;
+        color: #fff;
+        display: block;
+        padding: 5px;
+    }
+
+    .nav__item--active a {
+    color: #7EB693;
+    }
+    
+}
+
+@media (max-width: 429px) {
+    .header__container {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .burger-menu,
+    input[type = checkbox] {
+        height: 21px;
+        width: 30px;
+        position: absolute;
+        top: 25.5px;
+        left: 0;
+        visibility: visible;
+    }
+
+    .header__controll {
+        width: 200px;
+        display: flex;
+        gap: 10px;
+    }
+    
 }
 
 .header__button {

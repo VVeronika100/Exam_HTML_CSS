@@ -9,7 +9,6 @@
     padding-top: 40.67px;
     padding-bottom: 40.45px;
     margin-left: auto;
-
 }
 
 .process__main {
@@ -27,10 +26,9 @@
 }
 
 .process__content h4 {
-font-size: 23px;
-letter-spacing: 0.36px;
-line-height: 32.2px;
-color: #274C5B;
-margin-top: 14.11px;
-margin-bottom: 4px;
+    font-size: 23px;
+    line-height: 32.2px;
+    color: #274C5B;
+    margin-top: 14.11px;
+    margin-bottom: 4px;
 }

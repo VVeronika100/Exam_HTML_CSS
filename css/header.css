@@ -83,6 +83,7 @@ a {
 .logo {
     width: 200px;
     min-width: 200px;
+    cursor: pointer;
 }
 
 .header__controll {

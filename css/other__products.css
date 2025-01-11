@@ -56,5 +56,16 @@
     .other-products__header {
         align-items: center;
     }
+
+    .other-products h2,
+    .other-products h3 {
+        text-align: center;
+    }
+}
+
+@media (max-width: 372px) {
+    .other-products h2 {
+        max-width: 294px;
+    }
 }
 

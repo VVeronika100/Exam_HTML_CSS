@@ -1,6 +1,8 @@
 .categories__container {
-    padding-top: 140.45px;
-    padding-bottom: 139.55px;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding-top: calc(20px + 120.45 * (100vw - 320px) / 1120);
+    padding-bottom: calc(20px + 119.55 * (100vw - 320px) / 1120);
     background-color: #EFF6F1;
     display: flex;
     justify-content: space-between;
@@ -20,8 +22,8 @@
 .categories__card a {
     display: inline-block;
     font-family: Roboto;
-    font-size: 25px;
-    line-height: 35px;
+    font-size: calc(18px + 7 * (100vw - 320px) / 1120);
+    line-height: calc(28px + 7 * (100vw - 320px) / 1120);
     color: #274C5B;
     padding: 30px 79px;
     background-color: #fff;
@@ -35,4 +37,10 @@
     box-shadow: 0px 4px 10px 2px rgba(0, 0, 0, 0.5);
 }
 
+@media (max-width: 1400px) {
+    .categories__container {
+        justify-content: center;
+        gap: 60px;
+    }
+}
 

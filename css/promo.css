@@ -1,14 +1,13 @@
 .promo__container {
-    padding-top: 140px;
-    padding-bottom: 140px;
+    padding-top: calc(20px + 120 * (100vw - 320px) / 1120);
+    padding-bottom: calc(20px + 120 * (100vw - 320px) / 1120);
     display: flex;
     justify-content: space-between;
     gap: 10px;
 }
 
 .promo__card {
-    max-width: 665px;
-    width: 100%;
+    width: calc(485px + 180 * (100vw - 320px) / 1120);
     border-radius: 30px;
     background-repeat: no-repeat;
 }
@@ -20,16 +19,18 @@
 
 .promo__card h2 {
     font-weight: normal;
-    font-size: 40px;
-    line-height: 52px;
+    font-size: calc(25px + 20 * (100vw - 320px) / 1120);
+    line-height: calc(38px + 20 * (100vw - 320px) / 1120);
 }
 
 .promo__card--right {
     background-image: url(../img/promo_right.png);
+    background-position: top 0 right 0;
 }
 
 .promo__card--left {
-    background-image: url(../img/promo_left.png);  
+    background-image: url(../img/promo_left.png); 
+    background-position: top 0 right 0;
 }
 
 .promo__card--left h2,
@@ -50,3 +51,69 @@
     margin-left: 55px;
 }
 
+@media (min-width: 1441px) {
+    .promo__container {
+        padding-top: 140px;
+        padding-bottom: 140px;
+    }
+    
+    .promo__card {
+        width: 665px;
+    }
+
+    .promo__card h2 {
+        font-size: 45px;
+        line-height: 58px;
+    } 
+}
+
+@media (max-width: 1170px) {
+    .promo__container {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .promo__card {
+        width: 665px;
+        border-radius: 30px;
+        background-repeat: no-repeat;
+    }
+
+    .promo__card--right {
+        background-image: url(../img/promo_right.png);
+        background-position: top 0 right 0;
+    }
+    
+    .promo__card--left {
+        background-image: url(../img/promo_left.png); 
+        background-position: top 0 right 0;
+    } 
+}
+
+@media (max-width: 562px) {
+    .promo__card--right {
+        background-image: none;
+        background-color: #EBF0F4;
+    }
+    .promo__card--left {
+        background-image: none; 
+        background-color: #F96692;
+    }
+
+    .promo__card h2,  
+    .promo__card h3 {
+        text-align: center;
+        margin-left: 0;
+    }
+
+    .promo__card h2 {
+        font-size: calc(25px + 20 * (100vw - 320px) / 242);
+        line-height: calc(38px + 20 * (100vw - 320px) / 242);
+    }
+
+    .promo__card h3 {
+        font-size: calc(26px + 10 * (100vw - 320px) / 242);
+        line-height: calc(54.8px + 10 * (100vw - 320px) / 242);
+    }
+}

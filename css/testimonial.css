@@ -1,8 +1,15 @@
 .testimonial__bg {
     background-image: url(../img/testimonial_bg.png);
-    background-repeat: no-repeat;
-    max-width: 1440px;
+    background-repeat: repeat;
+    background-size:  calc(320px + 1120 * (100vw - 320px) / 1120) 
+                      calc(277.4px + 970.6 * (100vw - 320px) / 1120);
     margin: 0 auto;
+}
+
+@media (max-width: 605px) {
+    .testimonial__bg {
+        background-image: none;
+    }
 }
 
 .testomonial__container,
@@ -12,19 +19,23 @@
     align-items: center;
 }
 
+.testimonial__contant h2 {
+    text-align: center;
+}
+
 .testomonial__container {
-    padding-top: 130px;
-    padding-bottom: 120px;
+    padding-top: calc(20px + 110 * (100vw - 320px) / 1120);
+    padding-bottom: calc(30px + 90 * (100vw - 320px) / 1120);
     justify-content: space-between;
 }
 
 .testimonial__contant {
-    padding-bottom: 95.22px;
+    padding-bottom: calc(20px + 75 * (100vw - 320px) / 1120);
     border-bottom: 1px solid #E0E0E0;
 }
 
 .testimonial__avatar {
-    margin-top: 60px;
+    margin-top: calc(20px + 40 * (100vw - 320px) / 1120);
     width: 115px;
     border-radius: 100px;
     overflow: hidden;
@@ -53,8 +64,8 @@
 
 .name {
     font-weight: bold;
-    font-size: 26px;
-    line-height: 33.8px;
+    font-size: calc(18px + 8 * (100vw - 320px) / 1120);
+    font-size: calc(25.8px + 8 * (100vw - 320px) / 1120);
     color: #274C5B;
     margin-top: 23px;
 }
@@ -65,7 +76,7 @@
 }
 
 .testimonial__items {
-    margin-top: 99.78px;
+    margin-top: calc(10px + 90 * (100vw - 320px) / 1120);
     max-width: 1104px;
     display: flex;
     justify-content: space-around;
@@ -101,10 +112,41 @@
     margin-top: 75px;
     font-size: 42px;
     line-height: 56.6px;
+
 }
 
 .testimonial__item-inset h4 {
     font-size: 18px;
     line-height: 32.4px;
     color: #274C5B;
+}
+
+@media (min-width: 1441px) {
+    .testimonial__bg {
+        background-size:  1440px 1248px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    
+    .testomonial__container {
+        padding-top: 130px;
+        padding-bottom: 120px;
+    }
+
+    .testimonial__contant {
+        padding-bottom: 95px;
+    }
+
+    .testimonial__avatar {
+        margin-top: 60px;
+    }
+
+    .name {
+        font-size: 26px;
+        font-size: 33.8px;
+    }
+
+    .testimonial__items {
+        margin-top: 100px;
+    }
 }
